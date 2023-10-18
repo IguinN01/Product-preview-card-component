@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Fraunces';
+}
+
+html {
+    background: #F3EAE3;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px #00000025;
+}
+
+main img {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.bloco {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.bloco .perfume {
+    margin-top: 32px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+.bloco .top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: 'Fraunces';
+}
+
+.bloco .descricao {
+    font-size: 12px;
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+.valor h3 {
+    margin-top: 20px;
+    font-size: 32px;
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+}
+
+.valor p {
+    margin-top: -28px;
+    margin-left: 170px;
+    font-size: 12px;
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+main button {
+    margin-top: 42px;
+    cursor: pointer;
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    background: hsl(158, 36%, 37%);
+    color: #FFF;
+    transition: background 0.3s;
+}
+
+main button:hover {
+    background: hsl(212, 21%, 14%);
+}
+
+@media only screen and (max-width: 375px) {
+
+    main {
+        height: 670px;
+        margin-left: 16px;
+        margin-right: 16px;
+        flex-direction: column;
+    }
+
+    img.img_perfume {
+        width: 100%;
+        height: 40%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        content: url('../images/image-product-mobile.jpg');
+    }
+
+
+    .bloco .descricao {
+        font-size: 13px;
+    }
+
+}
